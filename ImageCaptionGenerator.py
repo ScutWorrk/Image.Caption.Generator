@@ -23,7 +23,7 @@ def main():
 
         # Generate content with vision model
         vision_model = genai.GenerativeModel('gemini-pro-vision')
-        response = vision_model.generate_content(["Provide a short caption only one sentence on this image with emojis and hashtags.", image])
+        response = vision_model.generate_content(["Provide a short caption only one sentence on this image with emojis and hashtags in English.", image])
 
         st.markdown(response.text) 
 
